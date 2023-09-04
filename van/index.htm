@@ -14,25 +14,27 @@
     <link href="../style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
-    var urlParams = new URLSearchParams(window.location.search);
-    var q = urlParams.get('q');
-    var qurl = encodeURIComponent(q)
-    var urls = [
-        ['FB Marketplace','https://www.facebook.com/marketplace/vancouver/search/?query='+qurl],
-        ['Craigslist','https://vancouver.craigslist.org/search/sss?purveyor=owner&query='+qurl],
-        ['Kijiji','https://www.kijiji.ca/b-vancouver/'+qurl+'/k0l1700287']
-    ];
+        var urlParams = new URLSearchParams(window.location.search);
+        var q = urlParams.get('q');
+        var qurl = encodeURIComponent(q)
+        var urls = [
+            ['FB Marketplace','https://www.facebook.com/marketplace/vancouver/search/?query='+qurl],
+            ['Craigslist','https://vancouver.craigslist.org/search/sss?purveyor=owner&query='+qurl],
+            ['Kijiji','https://www.kijiji.ca/b-vancouver/'+qurl+'/k0l1700287']
+        ];
     </script>
     <script src="../script.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <h1>Classifieds MultiSearch</h1>
-        <h2>Vancouver, BC</h2>
+    <header>Allow popups for Open All button to work</header>
+    <main>
+        <h1>MultiSearch</h1>
+        <h2>Vancouver, BC Classifieds</h2>
         <form method="get">
             <input id="q" type="text" name="q" value=''>
             <input type="submit" value="Search">
         </form>
         <div id="qlinks"></div>
-    </div>
+    </main>
+    <footer onclick="window.open('https://github.com/mica/multisearch/')"></footer>
 </html>

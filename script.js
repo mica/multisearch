@@ -19,7 +19,7 @@ $(function() {
         $('#qlinks').append(
             $('<div/>', {'id': 'qall'}).append(
                 $('<p/>').append(
-                    'Open All<br /><small>in New Tabs</small>'
+                    'Open All<br /><small>in new tabs</small>'
                 )
             ).click(function() {
                 $.each(urls.reverse(), function(i, url) {

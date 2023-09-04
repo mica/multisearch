@@ -14,23 +14,25 @@
     <link href="../style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
-    var urlParams = new URLSearchParams(window.location.search);
-    var q = urlParams.get('q');
-    var urls = [
-        ['FB Marketplace','https://www.facebook.com/marketplace/dc/search/?query='+q],
-        ['Craigslist','https://washingtondc.craigslist.org/search/sss?purveyor=owner&query='+q]
-    ];
+        var urlParams = new URLSearchParams(window.location.search);
+        var q = urlParams.get('q');
+        var urls = [
+            ['FB Marketplace','https://www.facebook.com/marketplace/dc/search/?query='+q],
+            ['Craigslist','https://washingtondc.craigslist.org/search/sss?purveyor=owner&query='+q]
+        ];
     </script>
     <script src="../script.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <h1>Classifieds MultiSearch</h1>
-        <h2>Washington, DC</h2>
+    <header>Allow popups for Open All button to work</header>
+    <main>
+        <h1>MultiSearch</h1>
+        <h2>Washington, DC Classifieds</h2>
         <form method="get">
             <input id="q" type="text" name="q" value=''>
             <input type="submit" value="Search">
         </form>
         <div id="qlinks"></div>
-    </div>
+    </main>
+    <footer onclick="window.open('https://github.com/mica/multisearch/')"></footer>
 </html>
