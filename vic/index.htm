@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG226NDPQM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RG226NDPQM');
+    </script>
+    
+    <meta charset="utf-8">
+    <title>Victoria Classifieds MultiSearch</title>
+    <link href="/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var q = urlParams.get('q');
+    var qurl = encodeURIComponent(q)
+    var urls = [
+        ['FB Marketplace','https://www.facebook.com/marketplace/victoria/search/?query='+qurl],
+        ['UsedVictoria','https://www.usedvictoria.com/all?commercial=false&q='+qurl],
+        ['Craigslist','https://victoria.craigslist.org/search/sss?purveyor=owner&query='+qurl],
+        ['VarageSale','https://www.varagesale.com/victoria-bc-swap-shop/search?q='+qurl],
+        ['Kijiji','https://www.kijiji.ca/b-victoria-bc/'+qurl+'/k0l1700173']
+    ];
+    </script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Classifieds MultiSearch</h1>
+        <h2>Victoria, BC</h2>
+        <form method="get">
+            <input id="q" type="text" name="q" value=''>
+            <input type="submit" value="Search">
+        </form>
+        <div id="qlinks"></div>
+    </div>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Zilla Slab', sans-serif;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+h1, h2 {
+    font-weight: 300;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+input[type=text], input[type=submit] {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: large;
+    margin: 2px;
+}
+input[type=submit] {
+    cursor: pointer;
+    background: #eee;
+}
+#wrap {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#qlinks {
+    margin-top: 20px;
+}
+.qlink, #qall {
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 140px;
+    height: 90px;
+    float: left;
+    margin: 5px;
+    position: relative;
+}
+.qlink div {
+    border-radius: 5px 5px 0 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    font-size: small;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+.qlink div img {
+    margin: 3px 5px;
+    vertical-align: middle;
+}
+.qlink p, #qall p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 130px;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.qlink p span {
+    color: #bbb;
+}
+#qall {
+    background: #eee;
+}
+#qall small {
+    color: #999;
+}
